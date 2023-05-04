@@ -1,0 +1,32 @@
+
+.navigation {
+
+    &__link {
+    }
+
+    &__button {
+        display: block;
+        width: 36px;
+        height: 36px;
+        background: url('../img/menu.svg') center/contain;
+
+    &_active {
+        background: url('../img/close.svg');
+    }
+
+    @include lg{
+        width: 50px;
+        height: 50px;
+    }
+
+    }
+}
+.nav {
+
+    &__list {
+        display: none;
+    }
+
+    &__item {
+    }
+}
