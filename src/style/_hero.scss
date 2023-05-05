@@ -44,8 +44,13 @@
     flex-direction: column;
     justify-content: flex-end;
 
+    @include lg {
+      padding-bottom: 74px;
+    }
+
     @include xl {
       min-height: 780px;
+      padding-bottom: 100px;
     }
     @include xxl {
       min-height: 100vh;
@@ -59,6 +64,11 @@
     text-transform: uppercase;
     color: $back;
     margin-bottom: 24px;
+
+    @include lg {
+      font-size: 52px;
+      margin-bottom: 40px;
+    }
   }
 
   &__subtitle {
